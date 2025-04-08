@@ -9,7 +9,7 @@
 
 4. J'ai utilisé la commande "git log" pour afficher la liste. 
 
-6. Ces deux commandes comparent des modifications mais pas dans les mêmes zones.
+6. Ces deux commandes comparent des modifications mais pas dans les mêmes zones. La commande git diff --staged affiche les différences dans le staging area.
 diff --git a/README.md b/README.md
 index 87d5ec1..4d01fe9 100644
 --- a/README.md
@@ -40,32 +40,30 @@ Date:   Tue Apr 8 15:40:33 2025 +0200
 
     Ajout des nouveaux fichiers
  
+8. Le résultat de la commande m'indique que j'ai deux nouveaux fichiers dans mon répertoire : Sur la branche develop
+Modifications qui seront validées :
+  (utilisez "git restore --staged <fichier>..." pour désindexer)
+	nouveau fichier : brouillon.txt
+	nouveau fichier : fichier1.txt
 
+9. La commande git reset permet de réinitialiser le répertoire dans lequel je suis par rapport au fichier que j'indique. Elle annule les changements faits qui peuvent parfois être des erreurs. Les espaces concernés par cette commande sont le staging area ou les commits. 
 
+10. Pour cela, je fais un git log brouillon.txt et m'assure que rien ne s'affiche. C'est le cas, cela signifie donc que mon fichier n'a pas été commit dans le staging area. Après le commit du fichier1.txt, elle m'affiche les informations de celui-ci : 
+commit 9f5c5f3d1c89806778a7874fd2b79858f60e6797 (HEAD -> develop)
+Author: llelantt <llelant@b109-06.iut.univ-paris8.fr>
+Date:   Tue Apr 8 16:31:08 2025 +0200
 
+    fichier1.txt
 
+11. Je fais d'abord un git status pour analyser l'état de mon répertoire. Je fais ensuite un git log pour afficher tous mes commits et voir si ils y sont tous. 
+ 
+13. Je fais un git clone pour cloner ce projet. 
 
+14. Je trouve le fichier README.md, et je trouve ces intitulés : Initial commit, Ajout d'une 2e ligne dans le fichier README.md., Ajout dans README.md, Modification sur la deuxième ligne du fichier README.md pour que celle-ci s'affiche comme du texte et non un titre., Correctif README.md.
+J'ai utilisé la commande git log. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+15. Pour le commit f7a7, la ligne "Ceci est un fichier README.md" a été ajoutée, et la ligne "Ceci est un fichier README.md" a été retirée par rapport au commit f813. Pour le commit 9b68, la ligne "TP-Git" a été ajoutée et la ligne "Ceci est un fichier README.md" par rapport au commit f813. 
+J'ai fait des git diff suivis des deux commits que je voulais comparer. 
  
 
  

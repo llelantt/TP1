@@ -1,0 +1,4 @@
+--TP1
+--LELANT Louise
+
+1. La commande git status permet d'afficher le statut, l'état du fichier dans lequel je suis. Elle permet également de voir les différentes modifications. 

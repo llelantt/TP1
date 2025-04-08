@@ -2,3 +2,71 @@
 --LELANT Louise
 
 1. La commande git status permet d'afficher le statut, l'état du fichier dans lequel je suis. Elle permet également de voir les différentes modifications. 
+
+2. Par rapport au premier git, je peux maintenant voir mon fichier réponses.txt que je viens d'ajouter.
+	
+3. Ils sont partis dans le nouveau répertoire courant du git.
+
+4. J'ai utilisé la commande "git log" pour afficher la liste. 
+
+6. Ces deux commandes comparent des modifications mais pas dans les mêmes zones.
+diff --git a/README.md b/README.md
+index 87d5ec1..4d01fe9 100644
+--- a/README.md
++++ b/README.md
+@@ -1 +1,3 @@
+ # TP1 git - LELANT Louise
++Sur la branche develop
++rien à valider, la copie de travail est propre
+
+7. La commande git show permet d'afficher l'historique des différents commits, en montrant les informations relatives à celui-ci de manière détaillée et complète, contrairement au git log. Elle affiche par exemple toutes les lignes qui ont été modifiées. Par exemple, elle m'affiche ceci, en plus des informations concernant sa création : diff --git a/README.md b/README.md
+index 87d5ec1..4d01fe9 100644
+--- a/README.md
++++ b/README.md
+@@ -1 +1,3 @@
+ # TP1 git - LELANT Louise
++Sur la branche develop
++rien à valider, la copie de travail est propre
+
+  
+La commande git status indique l'état actuel du dépôt git, ainsi que la brancge sur laquelle on se trouve. 
+
+Git diff affiche les différences entre deux commits indiqués lors de la saisie de la commande, ainsi que leur modifications.
+ 
+Pour finir, la commande git log permet d'afficher la liste des commits, avec juste les éléments importants de sa création, comme l'auteur et la date, ainsi que le message laissé.
+Elle me donne par exemple ceci : commit 0725733023380a960ce89cd5f31f59390a629a96 (HEAD -> develop)
+Author: llelantt <llelant@b109-06.iut.univ-paris8.fr>
+Date:   Tue Apr 8 15:40:33 2025 +0200
+
+    Ajout des nouveaux fichiers
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
